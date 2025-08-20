@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Contact</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" th:href="@{/style.css}">
+<link rel="stylesheet" th:href="@{/allcommon.css}">
+<link rel="stylesheet" th:href="@{/contact.css}">
+
+<!-- CSS for Hover Effect -->
+<style>
+.whatsapp-top-icon i {
+    font-size: 50px;        /* icon size */
+    color: #25D366;         /* WhatsApp green */
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+}
+
+.whatsapp-top-icon:hover i {
+    transform: scale(1.2);  /* hover effect */
+}
+  
+</style>
+
+</head>
+<body>
+	<!-- Navbar Include -->
+	<div th:replace="/fragment/navbar :: navbar-common"></div>
+
+	<!-- Hero Section -->
+	<section class="hero-section text-white text-center">
+		<div class="container">
+			<h1 class="display-4 fw-bold">Contact Us</h1>
+			<p class="lead">We are here to assist you with any questions or
+				concerns. Please reach out to us:</p>
+			<ul class="list-unstyled contact-list">
+				<li>Email: contact@homecare.com</li>
+				<li>Phone: +91-1234567890</li>
+				<li>Address: 123, HomeCare Street, City, State</li>
+			</ul>
+		</div>
+	</section>
+
+
+	<!-- Contact / Appointment Section -->
+	<section class="py-5">
+		<div class="container">
+		 <div th:if="${successMessage}" id="success-msg" class="alert alert-success text-center">
+        <span th:text="${successMessage}"></span>
+    </div>
+			<div class="row g-5 align-items-center">
+<!-- Left Content -->
+<div class="col-md-6 mb-4">
+    <!-- WhatsApp Icon on Top -->
+    <a href="https://wa.me/917877715602?text=I%20tried%20to%20contact%20you%2C%20please%20call%20back" 
+       target="_blank" class="whatsapp-top-icon mb-3 d-inline-block">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <h2 class="fw-bold mb-4">Get In Touch</h2>
+    <p class="text-muted mb-4">
+        Have any questions or want to book an appointment? Fill the form or contact us directly.
+    </p>
+    <ul class="list-unstyled">
+        <li class="mb-3">
+            <i class="fas fa-map-marker-alt text-primary me-2"></i> 123, HomeCare Street, New Delhi
+        </li>
+        <li class="mb-3">
+            <i class="fab fa-whatsapp text-success me-2"></i>
+            <a href="https://wa.me/917877715602?text=I%20tried%20to%20contact%20you%2C%20please%20call%20back" 
+               target="_blank" class="phone-number">+91 78777 15602</a>
+        </li>
+        <li class="mb-3">
+            <i class="fas fa-envelope text-danger me-2"></i> support@homecare.com
+        </li>
+    </ul>
+</div>
+
+				<!-- Right Form -->
+				<div class="col-md-6">
+					<div class="card shadow border-0 p-4">
+						<h4 class="fw-bold mb-3 text-center">Book an Appointment</h4>
+						<form action="#" th:action="@{/submit}" method="post">
+							<div class="mb-3">
+								<input type="text" name="name" class="form-control" placeholder="Your Name" required>
+							</div>
+							<div class="mb-3">
+								<input type="email"  name=email class="form-control"
+									placeholder="Email Address" required>
+							</div>
+							<div class="mb-3">
+								<input type="text" class="form-control"
+									placeholder="Phone Number" name="phone" required>
+							</div>
+							<div class="mb-3">
+								<input type="datetime-local" class="form-control" name="date" required>
+							</div>
+							<div class="mb-3">
+								<textarea class="form-control" rows="4"
+									placeholder="Your Message" name="message"></textarea>
+							</div>
+							<button type="submit"
+								class="btn btn-primary w-100 fw-bold appointment-btn">Book
+								Appointment</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer -->
+	<div th:replace="/fragment/footer :: footer-common"></div>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+// 5 second me message disappear
+setTimeout(function() {
+    var msg = document.getElementById('success-msg');
+    if(msg) {
+        msg.style.display = 'none';
+    }
+}, 5000);
+</script>
+</html>

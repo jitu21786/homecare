@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Bedside Attendant at Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/style.css}">
+  <link rel="stylesheet" th:href="@{/servicedropdown.css}">  
+</head>
+<body>
+<!-- Common Navbar Include -->
+<div th:replace="/fragment/navbar :: navbar-common"></div>
+
+<!-- Hero Section -->
+<section class="hero-nursing d-flex align-items-center text-white text-center">
+ <div class="container content">
+    <h1 class="fw-bold display-4">Bedside Attendant at Home</h1>
+    <p class="lead mt-3 fs-4">Compassionate support and daily care assistance at your doorstep.</p>
+    <a href="#services" class="btn btn-warning btn-lg mt-3 shadow">Explore Services</a>
+  </div>
+</section>
+
+<!-- About Bedside Attendant -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-3">Why Bedside Attendant at Home?</h2>
+        <p class="fs-5">
+          Our trained bedside attendants provide essential support for patients who need help with daily activities,
+          personal hygiene, and companionship. Whether recovering from illness, surgery, or managing old age,
+          attendants ensure safety, comfort, and care within the home environment.
+        </p>
+        <ul class="list-unstyled fs-5">
+          <li><i class="fas fa-check-circle text-success me-2"></i> Assistance with mobility & personal care</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> Feeding and medication reminders</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> Basic hygiene and grooming support</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> Emotional support and companionship</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://img.freepik.com/free-photo/young-nurse-helping-elderly-man_23-2149309182.jpg" 
+             class="img-fluid rounded shadow" alt="Bedside Attendant">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Cards -->
+<section id="services" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Our Bedside Attendant Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 card-hover">
+          <div class="card-body">
+            <i class="fas fa-user-nurse fa-3x text-primary mb-3"></i>
+            <h5 class="fw-bold">Personal Care</h5>
+            <p>Support in bathing, grooming, dressing, and maintaining patient hygiene with dignity.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 card-hover">
+          <div class="card-body">
+            <i class="fas fa-hand-holding-heart fa-3x text-danger mb-3"></i>
+            <h5 class="fw-bold">Daily Assistance</h5>
+            <p>Help in feeding, mobility, and ensuring patient comfort throughout the day.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 card-hover">
+          <div class="card-body">
+            <i class="fas fa-clock fa-3x text-success mb-3"></i>
+            <h5 class="fw-bold">24/7 Support</h5>
+            <p>Round-the-clock care and companionship for elderly and bedridden patients.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits with Image -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://img.freepik.com/free-photo/caregiver-supporting-senior-man_23-2149178459.jpg" 
+             class="img-fluid rounded shadow" alt="Benefits">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold">Benefits of Bedside Attendant at Home</h2>
+        <p class="fs-5">Our bedside attendant services bring comfort and care right to your doorstep:</p>
+        <ul class="list-unstyled fs-5">
+          <li><i class="fas fa-heart text-danger me-2"></i> Reduced stress for family members</li>
+          <li><i class="fas fa-heart text-danger me-2"></i> Professional attendants for reliable care</li>
+          <li><i class="fas fa-heart text-danger me-2"></i> Personalized attention for every patient</li>
+          <li><i class="fas fa-heart text-danger me-2"></i> Affordable and trustworthy services</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Why Choose Our Bedside Attendants?</h2>
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-person-hearts display-4 text-primary"></i>
+            <h5 class="mt-3">Compassionate Care</h5>
+            <p class="text-muted">Caring attendants who treat patients like family.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-shield-check display-4 text-success"></i>
+            <h5 class="mt-3">Trusted & Reliable</h5>
+            <p class="text-muted">Background-verified staff for safe and secure care.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-emoji-smile display-4 text-warning"></i>
+            <h5 class="mt-3">Patient Comfort</h5>
+            <p class="text-muted">Focus on ensuring comfort and emotional support.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-clock-history display-4 text-danger"></i>
+            <h5 class="mt-3">24/7 Availability</h5>
+            <p class="text-muted">Care available anytime as per family needs.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div th:replace="/fragment/footer :: footer-common"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

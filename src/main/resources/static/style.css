@@ -1,0 +1,116 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+	background:
+		url('https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg?auto=compress&cs=tinysrgb&w=1600')
+		center/cover no-repeat;
+	height: 85vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding-left: 10%;
+	padding-top: 8%;
+	color: white;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Service cards */
+.service-card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	height: 100%;
+}
+
+.service-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+	font-size: 3rem;
+	color: #0d6efd;
+}
+
+/* Navbar */
+.navbar-custom {
+	background-color: #003366;
+}
+
+.navbar-brand {
+	font-size: 1.2rem;
+}
+.phone-number {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ff9800  !important;  bright orange
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+.phone-number:hover {
+	color: #00ff00 !important; /* pink hover */
+}
+
+/* Carousel */
+.carousel-inner img {
+	height: 400px; /* slider ko chhota kar diya */
+	object-fit: cover;
+}
+
+/* Dropdown open on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+}
+
+/* Dropdown style */
+.dropdown-menu {
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+	padding: 8px 0;
+	animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Dropdown items style */
+.dropdown-item {
+	font-size: 14px; /* छोटी font */
+	font-weight: 500;
+	color: #333;
+	padding: 8px 18px;
+	transition: all 0.3s ease;
+	letter-spacing: 0.3px;
+}
+
+.dropdown-item {
+	font-size: 14px;
+	font-weight: 500;
+	color: #444; /* थोड़ा dark लेकिन readable color */
+	padding: 8px 18px;
+	transition: all 0.3s ease;
+	letter-spacing: 0.3px;
+}
+
+/* Dropdown hover effect */
+.dropdown-item:hover {
+	background: linear-gradient(90deg, #0d6efd, #003366);
+	color: #fff;
+	border-radius: 6px;
+	transform: translateX(4px); /* hover पर हल्की slide effect */
+}
+
+/* Dropdown animation */
+@
+keyframes fadeIn {
+	from {opacity: 0;
+	transform: translateY(10px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ICU Care At Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" th:href="@{/style.css}">
+  <link rel="stylesheet" th:href="@{/servicedropdown.css}">  
+</head>
+<body>
+<!-- Common Navbar Include -->
+<div th:replace="/fragment/navbar :: navbar-common"></div>
+
+<!-- Hero Section -->
+<section class="hero-nursing d-flex align-items-center text-white text-center">
+ <div class="container content">
+    <h1 class="fw-bold display-4">ICU Care At Home</h1>
+    <p class="lead mt-3 fs-4">Get advanced ICU care at the comfort of your home with expert doctors & equipment.</p>
+    <a href="#services" class="btn btn-warning btn-lg mt-3 shadow">Explore ICU Services</a>
+  </div>
+</section>
+
+<!-- About ICU Care -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="fw-bold mb-3">Why ICU at Home?</h2>
+        <p class="fs-5">
+          ICU at home services are designed for critical patients who require intensive monitoring 
+          and specialized care but prefer the comfort of home. 
+          With hospital-grade equipment and trained ICU staff, we ensure safe and professional treatment.
+        </p>
+        <ul class="list-unstyled fs-5">
+          <li><i class="fas fa-check-circle text-success me-2"></i> 24/7 monitoring with advanced equipment</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> Skilled ICU doctors and critical care nurses</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> Ventilator & oxygen therapy at home</li>
+          <li><i class="fas fa-check-circle text-success me-2"></i> Affordable alternative to long hospital stays</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 text-center">
+        <img src="https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg?auto=compress&cs=tinysrgb&w=800" 
+             class="img-fluid rounded shadow" alt="ICU at Home">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Cards -->
+<section id="services" class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-5">Our ICU at Home Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 card-hover">
+          <div class="card-body">
+            <i class="fas fa-lungs fa-3x text-danger mb-3"></i>
+            <h5 class="fw-bold">Ventilator Support</h5>
+            <p>Advanced ventilator setup and respiratory support under expert supervision at home.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 card-hover">
+          <div class="card-body">
+            <i class="fas fa-user-md fa-3x text-primary mb-3"></i>
+            <h5 class="fw-bold">Critical Care Nurses</h5>
+            <p>Skilled ICU nurses available round-the-clock to provide personalized critical care.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow border-0 card-hover">
+          <div class="card-body">
+            <i class="fas fa-heartbeat fa-3x text-success mb-3"></i>
+            <h5 class="fw-bold">ICU Equipment at Home</h5>
+            <p>Hospital-grade ICU machines, monitoring devices, and oxygen concentrators installed at home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Benefits with Image -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="https://images.pexels.com/photos/6129685/pexels-photo-6129685.jpeg?auto=compress&cs=tinysrgb&w=800" 
+             class="img-fluid rounded shadow" alt="Benefits ICU">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold">Benefits of ICU at Home</h2>
+        <p class="fs-5">ICU at home brings specialized care with convenience:</p>
+        <ul class="list-unstyled fs-5">
+          <li><i class="fas fa-heart text-danger me-2"></i> Cost-effective alternative to long hospital stays</li>
+          <li><i class="fas fa-heart text-danger me-2"></i> Emotional comfort of being near family</li>
+          <li><i class="fas fa-heart text-danger me-2"></i> Personalized one-on-one attention</li>
+          <li><i class="fas fa-heart text-danger me-2"></i> Continuous monitoring & emergency response</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Why Choose Our ICU at Home?</h2>
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-heart-pulse display-4 text-danger"></i>
+            <h5 class="mt-3">Expert ICU Team</h5>
+            <p class="text-muted">Specialized doctors and ICU nurses trained for critical care.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-hospital display-4 text-primary"></i>
+            <h5 class="mt-3">Hospital-Grade Setup</h5>
+            <p class="text-muted">Complete ICU environment recreated at home with equipment.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-clock-history display-4 text-success"></i>
+            <h5 class="mt-3">24/7 Monitoring</h5>
+            <p class="text-muted">Constant monitoring and quick response in case of emergencies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card shadow-sm h-100 why-card">
+          <div class="card-body">
+            <i class="bi bi-shield-check display-4 text-warning"></i>
+            <h5 class="mt-3">Safe & Affordable</h5>
+            <p class="text-muted">Safe, reliable, and affordable critical care services at home.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div th:replace="/fragment/footer :: footer-common"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

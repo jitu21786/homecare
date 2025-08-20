@@ -1,0 +1,42 @@
+<!-- fragments/navbar.html -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+  <div th:fragment="navbar-common">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow">
+      <div class="container">
+<a href="https://wa.me/917877715602?text=I%20tried%20to%20contact%20you%2C%20please%20call%20back" 
+   target="_blank" class="phone-number">📞 +91 78777 15602</a>        <a class="navbar-brand fw-bold" href="#">🏥 Nitin Home Care</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-uppercase fw-semibold">
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                         <li class="nav-item"><a class="nav-link" th:href="@{/about}">About</a></li>
+             
+            <!-- Services dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" 
+                 data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li><a class="dropdown-item" th:href="@{/service/nursing}">Nursing Care at Home</a></li>
+                <li><a class="dropdown-item" th:href="@{/service/physiotherapy}">Physiotherapy</a></li>
+                <li><a class="dropdown-item" th:href="@{/service/icu}">ICU at Home</a></li>
+                <li><a class="dropdown-item" th:href="@{/service/diagnostics}">Diagnostics Services at Home</a></li>
+                <li><a class="dropdown-item" th:href="@{/service/attendant}">Bedside Attendant at Home</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" th:href="@{/gallary}">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" th:href="@{/contact}">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>

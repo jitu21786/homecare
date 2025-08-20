@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Gallary</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" th:href="@{/style.css}">
+<link rel="stylesheet" th:href="@{/allcommon.css}">
+<link rel="stylesheet" th:href="@{/gallary.css}">
+
+
+</head>
+<body>
+	<!-- Navbar Include -->
+	<div th:replace="/fragment/navbar :: navbar-common"></div>
+
+	<!-- Hero Section -->
+	<section class="hero-section text-white text-center">
+		<div class="container">
+			<h1 class="display-4 fw-bold">Our Gallery</h1>
+			<p class="lead">Some glimpses of our services and patient care
+				moments.</p>
+		</div>
+	</section>
+
+	<!-- Gallery Section -->
+	<section class="bg-light py-5">
+		<div class="container text-center">
+			<h2 class="fw-bold mb-4">Our Gallery</h2>
+			<div class="row g-3">
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/6129681/pexels-photo-6129681.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 1">
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/7659571/pexels-photo-7659571.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 2">
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/5327916/pexels-photo-5327916.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 3">
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/8460095/pexels-photo-8460095.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 4">
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 5">
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/305565/pexels-photo-305565.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 6">
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/3992879/pexels-photo-3992879.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 7">
+					</div>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="card border-0 shadow-sm h-100">
+						<img
+							src="https://images.pexels.com/photos/4266933/pexels-photo-4266933.jpeg?auto=compress&cs=tinysrgb&w=400"
+							class="card-img-top gallery-img" alt="Gallery Image 8">
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<div th:replace="/fragment/footer :: footer-common"></div>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
