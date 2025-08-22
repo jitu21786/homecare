@@ -1,115 +1,134 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" th:href="@{/style.css}">
-    <link rel="stylesheet" th:href="@{/allcommon.css}">
+<meta charset="UTF-8">
+<title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+	rel="stylesheet">
+<link rel="stylesheet" th:href="@{/style.css}">
+<link rel="stylesheet" th:href="@{/allcommon.css}">
 </head>
 <body>
-<!-- Navbar Include -->
-<div th:replace="/fragment/navbar :: navbar-common"></div>
+	<!-- Navbar Include -->
+	<div th:replace="/fragment/navbar :: navbar-common"></div>
 
-<!-- Hero Section -->
-<section class="hero-section text-white text-center">
-    <div class="container">
-        <h1 class="display-4 fw-bold">About Us</h1>
-        <p class="lead">We are dedicated to providing the best HomeCare services to our clients.</p>
-    </div>
-</section>
+	<!-- Hero Section -->
+	<section class="hero-section text-white text-center">
+		<div class="container">
+			<h1 class="display-4 fw-bold">About Us</h1>
+			<p class="lead">We are dedicated to providing the best HomeCare
+				services to our clients.</p>
+		</div>
+	</section>
 
-<!-- Mission / Vision Section -->
-<section class="py-5">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="card shadow border-0 h-100">
-                    <div class="card-body">
-                        <i class="fas fa-bullseye fa-3x text-primary mb-3"></i>
-                        <h3 class="fw-bold">Our Mission</h3>
-                        <p>To deliver quality, compassionate, and personalized care to every client, ensuring comfort and support at every stage of life.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="card shadow border-0 h-100">
-                    <div class="card-body">
-                        <i class="fas fa-eye fa-3x text-success mb-3"></i>
-                        <h3 class="fw-bold">Our Vision</h3>
-                        <p>To become the most trusted HomeCare provider by building lasting relationships and making a difference in people’s lives.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+	<!-- Mission / Vision Section -->
+	<section class="py-5">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-6 mb-4">
+					<div class="card shadow border-0 h-100">
+						<div class="card-body">
+							<i class="fas fa-bullseye fa-3x text-primary mb-3"></i>
+							<h3 class="fw-bold">Our Mission</h3>
+							<p>To deliver quality, compassionate, and personalized care
+								to every client, ensuring comfort and support at every stage of
+								life.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 mb-4">
+					<div class="card shadow border-0 h-100">
+						<div class="card-body">
+							<i class="fas fa-eye fa-3x text-success mb-3"></i>
+							<h3 class="fw-bold">Our Vision</h3>
+							<p>To become the most trusted HomeCare provider by building
+								lasting relationships and making a difference in people’s lives.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<!-- Our Values -->
-<section class="bg-light py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-4">Our Core Values</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <i class="fas fa-heart fa-2x text-danger mb-2"></i>
-                <h5 class="fw-bold">Compassion</h5>
-                <p>We treat every client with kindness and respect, just like family.</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <i class="fas fa-hands-helping fa-2x text-primary mb-2"></i>
-                <h5 class="fw-bold">Integrity</h5>
-                <p>We are honest, transparent, and ethical in everything we do.</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <i class="fas fa-star fa-2x text-warning mb-2"></i>
-                <h5 class="fw-bold">Excellence</h5>
-                <p>We constantly strive to provide the highest standard of care and service.</p>
-            </div>
-        </div>
-    </div>
-</section>
+	<!-- Our Values -->
+	<section class="bg-light py-5">
+		<div class="container text-center">
+			<h2 class="fw-bold mb-4">Our Core Values</h2>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<i class="fas fa-heart fa-2x text-danger mb-2"></i>
+					<h5 class="fw-bold">Compassion</h5>
+					<p>We treat every client with kindness and respect, just like
+						family.</p>
+				</div>
+				<div class="col-md-4 mb-4">
+					<i class="fas fa-hands-helping fa-2x text-primary mb-2"></i>
+					<h5 class="fw-bold">Integrity</h5>
+					<p>We are honest, transparent, and ethical in everything we do.</p>
+				</div>
+				<div class="col-md-4 mb-4">
+					<i class="fas fa-star fa-2x text-warning mb-2"></i>
+					<h5 class="fw-bold">Excellence</h5>
+					<p>We constantly strive to provide the highest standard of care
+						and service.</p>
+				</div>
+			</div>
+		</div>
+	</section>
 
-<!-- Team Section -->
-<section class="py-5">
-    <div class="container text-center">
-        <h2 class="fw-bold mb-4">Meet Our Team</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="https://images.pexels.com/photos/7659571/pexels-photo-7659571.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                         class="card-img-top rounded-circle p-3 team-img" alt="Team Member">
-                    <div class="card-body">
-                        <h5 class="fw-bold">John Doe</h5>
-                        <p class="text-muted">Founder & CEO</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="https://images.pexels.com/photos/5327916/pexels-photo-5327916.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                         class="card-img-top rounded-circle p-3 team-img" alt="Team Member">
-                    <div class="card-body">
-                        <h5 class="fw-bold">Jane Smith</h5>
-                        <p class="text-muted">Operations Manager</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="https://images.pexels.com/photos/8460095/pexels-photo-8460095.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                         class="card-img-top rounded-circle p-3 team-img" alt="Team Member">
-                    <div class="card-body">
-                        <h5 class="fw-bold">David Johnson</h5>
-                        <p class="text-muted">Senior Care Specialist</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Footer -->
-<div th:replace="/fragment/footer :: footer-common"></div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Team Section -->
+	<section class="py-5">
+		<div class="container text-center">
+			<h2 class="fw-bold mb-4">Meet Our Team</h2>
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card border-0 shadow h-100">
+						<img
+							src="https://images.pexels.com/photos/7659571/pexels-photo-7659571.jpeg?auto=compress&cs=tinysrgb&w=600"
+							class="card-img-top rounded-circle p-3 team-img"
+							alt="Team Member">
+						<div class="card-body">
+							<h5 class="fw-bold">John Doe</h5>
+							<p class="text-muted">Founder & CEO</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card border-0 shadow h-100">
+						<img
+							src="https://images.pexels.com/photos/5327916/pexels-photo-5327916.jpeg?auto=compress&cs=tinysrgb&w=600"
+							class="card-img-top rounded-circle p-3 team-img"
+							alt="Team Member">
+						<div class="card-body">
+							<h5 class="fw-bold">Jane Smith</h5>
+							<p class="text-muted">Operations Manager</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card border-0 shadow h-100">
+						<img
+							src="https://images.pexels.com/photos/8460095/pexels-photo-8460095.jpeg?auto=compress&cs=tinysrgb&w=600"
+							class="card-img-top rounded-circle p-3 team-img"
+							alt="Team Member">
+						<div class="card-body">
+							<h5 class="fw-bold">David Johnson</h5>
+							<p class="text-muted">Senior Care Specialist</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<div th:replace="/fragment/footer :: footer-common"></div>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

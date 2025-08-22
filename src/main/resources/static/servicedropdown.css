@@ -32,3 +32,39 @@
       transform: translateY(-8px);
       transition: 0.3s;
     }
+    /* For mobile phones */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .service-card {
+    margin-bottom: 20px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+  .hero p {
+    font-size: 0.9rem;
+  }
+  .navbar-brand, .nav-link {
+    font-size: 0.9rem;
+  }

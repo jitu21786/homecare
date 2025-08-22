@@ -1,27 +1,45 @@
 .appointment-btn {
-	background: linear-gradient(90deg, #007bff, #00c6ff);
-	border: none;
-	transition: 0.3s;
+    background: linear-gradient(90deg, #007bff, #00c6ff);
+    border: none;
+    transition: 0.3s;
 }
 
 .appointment-btn:hover {
-	background: linear-gradient(90deg, #00c6ff, #007bff);
-	transform: scale(1.05);
+    background: linear-gradient(90deg, #00c6ff, #007bff);
+    transform: scale(1.05);
 }
 
 .contact-list li {
-	display: inline-block;
-	margin: 0 15px;
-	padding: 5px 10px;
-	border-radius: 5px;
-	transition: all 0.3s ease;
-	cursor: pointer;
-	background-color: rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .contact-list li:hover {
-	background-color: rgba(255, 255, 255, 0.3);
-	transform: translateY(-3px);
-	color: #ffeb3b;
-	font-weight: bold;
+    background-color: #ff9800;
+    transform: translateY(-3px);
+}
+
+.whatsapp-top-icon i {
+    font-size: 50px; 
+    padding-left: 3px ;      
+    color: #25D366;       
+    transition: transform 0.3s ease;
+    margin-left: 50px;
+}
+
+.whatsapp-top-icon:hover i {
+    transform: scale(1.2);  /* hover effect */
+}
+html, body {
+    overflow-x: hidden; /* horizontal side ka gap/scroll band */
 }
